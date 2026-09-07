@@ -1,71 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Cartoon Character Card</title>
-
+  <title>My Ice Cream Shop Menu</title>
   <style>
-
-    /* Universal Selector - applies to everything on the page */
-    * {
-      font-size: 16px;
-    }
-
-    /* Element Selectors */
     body {
-      background-color: lightyellow;
+      font-family: Arial, sans-serif;
+      background-color: #fff4f8;
+      text-align: center;
+      color: #4a2c2a;
     }
-
     h1 {
-      color: darkblue;
+      color: #d63384;
+      font-size: 36px;
     }
-
-    h2 {
-      color: purple;
+    h1 + p {
+      color: #8a2be2;
+      font-weight: bold;
+      background-color: #ffe3f1;
+      border-radius: 10px;
     }
-
-    p {
-      color: dimgray;
-    }
-
-    /* Class Selector */
-    .cartoon-detail {
-      color: darkgreen;
+    .shop-description::first-letter {
+      font-size: 36px;
+      color: #ff1493;
       font-weight: bold;
     }
-
-    /* ID Selector */
-    #cartoon-card {
-      background-color: lightcyan;
+    .menu-box {
+      width: 420px;
+      background-color: white;
+      border: 3px solid #ff69b4;
+      border-radius: 15px;
+      margin: 20px auto;
+      padding: 20px;
     }
-
+    ul {
+      padding: 0;
+    }
+    ul > li {
+      list-style: none;
+      background-color: #fff0f5;
+      color: #5c2a4a;
+      font-size: 18px;
+      font-weight: bold;
+      margin: 10px;
+      padding: 12px;
+      border-radius: 10px;
+      border: 2px solid #ffb6c1;
+    }
+    ul > li:nth-child(3) {
+      background-color: #fff3cd;
+      color: #b85c00;
+      border: 3px solid #ffa500;
+    }
+    ul > li:hover {
+      background-color: #ff69b4;
+      color: white;
+      cursor: pointer;
+      transform: scale(1.05);
+    }
+    button {
+      background-color: #d63384;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      padding: 12px 24px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: #8a2be2;
+    }
   </style>
-
 </head>
 <body>
-
-  <h1>My Cartoon Character Card</h1>
-
-  <!-- Inline CSS -->
-  <p style="color: crimson;">Meet my favourite cartoon character!</p>
-
-  <div id="cartoon-card">
-
-    <h2>About My Character</h2>
-
-    <p class="cartoon-detail">Character Name: Doraemon</p>
-    <p class="cartoon-detail">Best Friend: Nobita</p>
-    <p class="cartoon-detail">Favourite Food: Dorayaki</p>
-    <p class="cartoon-detail">Special Power: Future Gadgets</p>
-
+  <h1>My Ice Cream Shop Menu</h1>
+  <p>Welcome to Scoops of Joy!</p>
+  <p class="shop-description">
+    We serve colourful, creamy, and delicious ice cream flavours.
+  </p>
+  <div class="menu-box">
+    <h2>Today's Ice Cream Flavours</h2>
+    <ul>
+      <li>Chocolate Delight</li>
+      <li>Strawberry Swirl</li>
+      <li>Mango Magic - Today's Special</li>
+      <li>Vanilla Dream</li>
+      <li>Blueberry Blast</li>
+    </ul>
+    <button>Order Now</button>
   </div>
-
-  <h2>Why I Like This Character</h2>
-
-  <p>Doraemon is kind, helpful, and funny.</p>
-  <p>He always tries to help his friends solve problems.</p>
-  <p>He teaches us about friendship and creativity.</p>
-
 </body>
 </html>
