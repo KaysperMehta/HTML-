@@ -1,92 +1,173 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>My Ice Cream Shop Menu</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adventure Park Challenge</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
   <style>
     body {
+      background-color: #102018;
+      color: #f0f0f0;
       font-family: Arial, sans-serif;
-      background-color: #fff4f8;
       text-align: center;
-      color: #4a2c2a;
+      padding: 30px;
     }
+
     h1 {
-      color: #d63384;
-      font-size: 36px;
+      color: #ffcc33;
     }
-    h1 + p {
-      color: #8a2be2;
+
+    h2 {
+      color: #ffffff;
+      margin-top: 30px;
+    }
+
+    h3 {
+      color: #ffffff;
+    }
+
+    small {
+      color: #bbbbbb;
+    }
+
+    dl {
+      text-align: left;
+      display: inline-block;
+    }
+
+    dt {
+      color: #ffcc33;
       font-weight: bold;
-      background-color: #ffe3f1;
-      border-radius: 10px;
     }
-    .shop-description::first-letter {
-      font-size: 36px;
-      color: #ff1493;
-      font-weight: bold;
+
+    dd {
+      color: #dddddd;
     }
-    .menu-box {
-      width: 420px;
-      background-color: white;
-      border: 3px solid #ff69b4;
-      border-radius: 15px;
-      margin: 20px auto;
-      padding: 20px;
+
+    mark {
+      background-color: #ffcc33;
+      color: #000000;
+      padding: 2px 6px;
+      border-radius: 4px;
     }
-    ul {
-      padding: 0;
-    }
-    ul > li {
-      list-style: none;
-      background-color: #fff0f5;
-      color: #5c2a4a;
-      font-size: 18px;
-      font-weight: bold;
-      margin: 10px;
-      padding: 12px;
-      border-radius: 10px;
-      border: 2px solid #ffb6c1;
-    }
-    ul > li:nth-child(3) {
-      background-color: #fff3cd;
-      color: #b85c00;
-      border: 3px solid #ffa500;
-    }
-    ul > li:hover {
-      background-color: #ff69b4;
-      color: white;
-      cursor: pointer;
-      transform: scale(1.05);
-    }
-    button {
-      background-color: #d63384;
-      color: white;
-      border: none;
-      border-radius: 20px;
-      padding: 12px 24px;
+
+    code {
+      background-color: #07130d;
+      color: #66ff99;
+      padding: 2px 8px;
+      border-radius: 4px;
       font-size: 16px;
-      font-weight: bold;
     }
-    button:hover {
-      background-color: #8a2be2;
+
+    abbr {
+      color: #ffcc33;
+      font-weight: bold;
+      cursor: help;
+    }
+
+    pre {
+      background-color: #07130d;
+      color: #66ff99;
+      padding: 15px;
+      border-radius: 8px;
+      display: inline-block;
+      text-align: left;
+    }
+
+    blockquote {
+      border-left: 4px solid #ffcc33;
+      padding-left: 15px;
+      color: #cccccc;
+      font-style: italic;
+      display: inline-block;
+      text-align: left;
+    }
+
+    hr {
+      border-color: #2f4f3f;
     }
   </style>
 </head>
+
 <body>
-  <h1>My Ice Cream Shop Menu</h1>
-  <p>Welcome to Scoops of Joy!</p>
-  <p class="shop-description">
-    We serve colourful, creamy, and delicious ice cream flavours.
-  </p>
-  <div class="menu-box">
-    <h2>Today's Ice Cream Flavours</h2>
-    <ul>
-      <li>Chocolate Delight</li>
-      <li>Strawberry Swirl</li>
-      <li>Mango Magic - Today's Special</li>
-      <li>Vanilla Dream</li>
-      <li>Blueberry Blast</li>
-    </ul>
-    <button>Order Now</button>
-  </div>
+
+  <h1>Welcome to Adventure Park Challenge!</h1>
+  <p>Get ready to explore rides, challenges, and safety missions while learning typography in HTML and Bootstrap.</p>
+
+  <hr>
+
+  <h2>Adventure Levels</h2>
+  <p class="display-1">Extreme Explorer</p>
+  <p class="display-2">Mountain Rider</p>
+  <p class="display-3">Trail Runner</p>
+  <p class="display-4">New Adventurer</p>
+
+  <hr>
+
+  <h2>Visitor Passes</h2>
+  <h3>Aarav <small>Pass: Extreme Explorer</small></h3>
+  <h3>Mia <small>Pass: Mountain Rider</small></h3>
+  <h3>Zara <small>Pass: Trail Runner</small></h3>
+
+  <hr>
+
+  <h2>Ride Dictionary</h2>
+  <dl>
+    <dt>Sky Coaster</dt>
+    <dd>A fast ride that takes visitors high above the park.</dd>
+
+    <dt>Treasure Trail</dt>
+    <dd>A mystery path where visitors solve clues to find treasure.</dd>
+
+    <dt>River Rush</dt>
+    <dd>A water ride that moves quickly through twists and turns.</dd>
+  </dl>
+
+  <hr>
+
+  <h2>Safety Mission</h2>
+  <p>Please report to <mark>Gate 3</mark> before the challenge begins.</p>
+  <p>The rescue drill will happen near <mark>River Zone</mark>.</p>
+
+  <hr>
+
+  <h2>Ride Commands</h2>
+  <p>Start the coaster: <code>ride.start("Sky Coaster")</code></p>
+  <p>Open the trail: <code>trail.open("Treasure Trail")</code></p>
+  <p>Stop the ride: <code>ride.stop("River Rush")</code></p>
+
+  <hr>
+
+  <h2>Park Short Forms</h2>
+  <p><abbr title="Adventure Park Safety Team">APST</abbr> checks every ride before opening.</p>
+  <p><abbr title="River Rescue Unit">RRU</abbr> helps visitors near water rides.</p>
+  <p><abbr title="Junior Explorer Club">JEC</abbr> is for young adventure lovers.</p>
+
+  <hr>
+
+
+  <h2>Daily Challenge Schedule</h2>
+  <pre>
+10:00 AM  -  Gate Entry
+11:00 AM  -  Sky Coaster
+12:00 PM  -  Treasure Trail
+02:00 PM  -  River Rush
+03:00 PM  -  Final Adventure Badge
+  </pre>
+
+  <hr>
+
+  <h2>Adventure Quote</h2>
+  <blockquote class="blockquote">
+    <p>"Adventure begins when you try something new."</p>
+    <footer class="blockquote-footer">Adventure Park Team</footer>
+  </blockquote>
+
 </body>
+
 </html>
+
